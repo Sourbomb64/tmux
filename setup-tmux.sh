@@ -37,7 +37,7 @@ fi
 mkdir -p "$TARGET_DIR"
 
 echo "Cloning configuration repository..."
-git clone FILL_IN_REPO "$TARGET_DIR"
+git clone https://github.com/Sourbomb64/tmux.git "$TARGET_DIR"
 
 # 4. Inject the chosen path into the tmux.conf file dynamically
 # This finds the TMUX_BASE_PATH line and replaces it with the actual path chosenS

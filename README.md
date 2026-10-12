@@ -16,7 +16,7 @@ Before installing, ensure you have the following on your system:
 ### Script Install
 1. Run (Trust me Bro) Script
 ``` bash
-curl -sL "https://raw.githubusercontent.com/username/repo/main/setup-tmux.sh" | bash
+curl -sL "https://raw.githubusercontent.com/Sourbomb64/tmux/main/setup-tmux.sh" | bash
 ```
 
 ## File Structure
