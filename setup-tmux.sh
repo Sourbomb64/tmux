@@ -40,7 +40,7 @@ echo "Cloning configuration repository..."
 git clone https://github.com/Sourbomb64/tmux.git "$TARGET_DIR"
 
 # 4. Inject the chosen path into the tmux.conf file dynamically
-# This finds the TMUX_BASE_PATH line and replaces it with the actual path chosenS
+# This finds the TMUX_BASE_PATH line and replaces it with the actual path chosen.
 sed -i.bak "s|^TMUX_BASE_PATH=.*|TMUX_BASE_PATH=\"$TARGET_DIR\"|" "$TARGET_DIR/tmux.conf"
 rm -f "$TARGET_DIR/tmux.conf.bak" # Clean up sed backup file
 
@@ -48,4 +48,4 @@ echo "Cloning Tmux Plugin Manager (TPM)..."
 git clone https://github.com/tmux-plugins/tpm "$TARGET_DIR/plugins/tpm"
 
 echo "Setup complete. You can now launch tmux."
-echo "Now let TPM handled the right with 'prefix + I'."
+echo "Now let TPM handled the rest with 'prefix + I'."
